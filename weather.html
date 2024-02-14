@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Stylesheet" href="weather.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>weatherWeb</title>
+</head>
+<body>
+    <div id="container">
+
+            <div id="search-section">
+                <i class="bx bxs-map"></i>
+                 <input type="text" id="search-Input" placeholder="Enter your location..."/>
+                 <button class="bx bx-search" id="search-btn"></button>
+            </div>
+        
+        <div id="result">
+            <div>
+                <h1 id="cityName">City</h1>
+            </div>
+
+            <div id="weather">
+                <img src="image/clear.png" id="image">
+                <p id="temperature">0°C</p>
+                <p id="description">Broken Clouds</p>           
+            </div>
+
+            <div id="details">
+                <div id="sectionHimidity">
+                    <i class='bx bx-water'></i>
+                    <div id="humidityBox">
+                        <span id="humidity">0%</span>
+                        <p>Humidity</p>
+                    </div>                
+                </div>
+                <div id="sectionWind">
+                    <i class='bx bx-wind' ></i>
+                    <div>
+                        <span id="wind">0km/h</span>
+                        <p>Wind Speed</p>
+                    </div>
+                </div> 
+            </div>
+        </div>
+            <div id="notFound">
+                <img src="image/location.png">
+                <p>Location not found!</p>
+
+            </div>
+    </div>
+    <script src="weather.js"></script>
+</body>
+</html>
